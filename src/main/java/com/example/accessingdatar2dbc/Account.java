@@ -12,7 +12,6 @@ public class Account {
     private String lastName;
     private BigDecimal balance;
 
-
     public Account(String accountNumber, String firstName, String lastName, BigDecimal balance) {
         this.accountNumber = accountNumber;
         this.firstName = firstName;
