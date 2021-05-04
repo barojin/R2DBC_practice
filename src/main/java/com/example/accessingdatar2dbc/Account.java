@@ -1,13 +1,15 @@
 package com.example.accessingdatar2dbc;
 
-import java.math.BigDecimal;
 import org.springframework.data.annotation.Id;
+
+import java.math.BigDecimal;
 
 public class Account {
     @Id
     private Long id;
 
     private String accountNumber;
+    private String owner;
     private String firstName;
     private String lastName;
     private BigDecimal balance;
@@ -16,16 +18,16 @@ public class Account {
         this.accountNumber = accountNumber;
         this.firstName = firstName;
         this.lastName = lastName;
+        this.owner = firstName + " " + lastName;
         this.balance = balance;
     }
 
-    public String getName() {
-        return this.firstName + " " + this.lastName;
+    public String getOwner() {
+        return owner;
     }
-    public void setName(String name){
-        String[] parts = name.split(" ");
-        this.firstName = parts[0];
-        this.lastName = parts[1];
+
+    public void setOwner(String owner) {
+        this.owner = owner;
     }
 
     public Long getId() {
@@ -73,6 +75,7 @@ public class Account {
         return "Account{" +
                 "id=" + id +
                 ", accountNumber='" + accountNumber + '\'' +
+                ", owner='" + owner + '\'' +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", balance=" + balance +
