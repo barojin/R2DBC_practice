@@ -16,7 +16,7 @@ You can also make the jar file through the terminal or Spring STS and run the ja
 - Built the java application with gradle[1].
 - gradle dependecy: R2DBC, H2<br>
 - Used the interface **ReactiveCrudRepository**<br>
-- Implemented the repository proxy By deriving the query from the method name directly[4].
+- Define the query methods by deriving the query from the method name directly[4].
 - findTop2ByOrderByBalanceDesc method in AccountRepository.java[5]
 
 # Terms
@@ -24,7 +24,7 @@ You can also make the jar file through the terminal or Spring STS and run the ja
 - Reactive programming APIs to relational databases.<br>
 - In contrast to the blocking nature of JDBC, it uses an reactive API.[2]
 
-Reference
+### Reference
 [1] https://spring.io/guides/gs/accessing-data-r2dbc/
 [2] https://r2dbc.io/
 [3] https://docs.spring.io/spring-data/commons/docs/current/api/org/springframework/data/repository/reactive/ReactiveCrudRepository.html
