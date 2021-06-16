@@ -26,8 +26,8 @@ You can also make the jar file through the terminal or Spring STS and run the ja
 
 ### Reference
 [1]: https://spring.io/guides/gs/accessing-data-r2dbc/ "r2dbc spring example"
-[2] https://r2dbc.io/
-[3] https://docs.spring.io/spring-data/commons/docs/current/api/org/springframework/data/repository/reactive/ReactiveCrudRepository.html
+[2]: https://r2dbc.io/
+[3]: https://docs.spring.io/spring-data/commons/docs/current/api/org/springframework/data/repository/reactive/ReactiveCrudRepository.html
 https://docs.spring.io/spring data/commons/docs/2.4.8/reference/html/#reference
-[4] 8.2.2. Query creation, https://docs.spring.io/spring-data/elasticsearch/docs/current/reference/html/#reference
-[5] 4.4.5 Limiting Query, https://docs.spring.io/spring-data/commons/docs/2.4.8/reference/html/#repositories.limit-query-result
+[4]: 8.2.2. Query creation, https://docs.spring.io/spring-data/elasticsearch/docs/current/reference/html/#reference
+[5]: 4.4.5 Limiting Query, https://docs.spring.io/spring-data/commons/docs/2.4.8/reference/html/#repositories.limit-query-result
